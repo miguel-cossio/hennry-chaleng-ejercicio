@@ -1,1 +1,2 @@
-historia.txt
+hola soy miguel y tengo 12 años me encanta la programacion y aprender
+mi sueño para el futuro es ayudar a millones de personos a lograr su sueño 
