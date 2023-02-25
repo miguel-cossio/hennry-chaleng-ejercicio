@@ -40,3 +40,23 @@ class HenryChallenge(unittest.TestCase):
         valor_esperado = 1
         print("Probando caso 3 exponentes...")
         self.assertEqual(valor_test, valor_esperado)
+
+    def test_ListaPrimos_01(self):
+        lista_test = ch.ListaPrimos(1, 11)
+        lista_esperada = [1, 2, 3, 5, 7, 11]
+        self.assertEqual(lista_test, lista_esperada)
+
+    def test_ListaPrimos_02(self):
+        lista_test = ch.ListaPrimos('0', 0)
+        lista_esperada = None
+        self.assertEqual(lista_test, lista_esperada)
+
+    def test_ListaPrimos_03(self):
+        lista_test = ch.ListaPrimos(66, 77)
+        lista_esperada = [67, 71, 73]
+        self.assertEqual(lista_test, lista_esperada)
+
+    def test_ListaPrimos_04(self):
+        lista_test = ch.ListaPrimos(0, '66')
+        lista_esperada = None
+        self.assertEqual(lista_test, lista_esperada)

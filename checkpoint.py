@@ -5,7 +5,7 @@
 
 def ListaDivisibles(numero, tope):
     '''
-    Esta función devuelve una lista ordenada de menor a mayor con los números divisibles 
+    Esta función devuelve una lista ordenada de menor a mayor con los números divisibles
     por el parámetro número entre uno (1) y el valor del parámetro "tope"
     Recibe dos argumentos:
         numero: Numero entero divisor
@@ -16,7 +16,7 @@ def ListaDivisibles(numero, tope):
         ListaDivisibles(7,50) debe retornar [7,14,21,28,35,42,49]
     '''
     # Tu código aca:
-    
+
     if type(numero) == int and type(tope) == int:
         numeros_div = []
         for i in range(1, tope+1):
@@ -44,9 +44,9 @@ def Exponente(numero, exponente):
         Exponente(10,3) debe retornar 1000
     '''
     # Tu código aca:
-    if type(numero) == int or type(numero)== float and type(exponente) == int or type(exponente)==float:
-        resultado = numero** exponente
-    
+    if type(numero) == int or type(numero) == float and type(exponente) == int or type(exponente) == float:
+        resultado = numero ** exponente
+
         return resultado
     else:
 
@@ -56,10 +56,10 @@ def Exponente(numero, exponente):
 def ListaDeListas(lista):
     '''
     Esta función recibe una lista, que puede contener elementos que a su vez sean listas y
-    devuelve esos elementos por separado en una lista única. 
+    devuelve esos elementos por separado en una lista única.
     En caso de que el parámetro no sea de tipo lista, debe retornar nulo.
     Recibe un argumento:
-        lista: La lista que puede contener otras listas y se convierte a una 
+        lista: La lista que puede contener otras listas y se convierte a una
         lista de elementos únicos o no iterables.
     Ej:
         ListaDeListas([1,2,['a','b'],[10]]) debe retornar [1,2,'a','b',10]
@@ -67,7 +67,7 @@ def ListaDeListas(lista):
         ListaDeListas([[1,2,[3]],[4]]) debe retornar [1,2,3,4]
     '''
     # Tu código aca:
-    
+
     return 'Funcion incompleta'
 
 
@@ -102,7 +102,32 @@ def ListaPrimos(desde, hasta):
         ListaPrimos(1,7) debe retonan [1,2,3,5,7]
     '''
     # Tu código aca:
-    return 'Funcion incompleta'
+    if type(desde) != int or type(hasta) != int or desde <= 0 or hasta <= 0:
+        return None
+
+    # Verificar que desde no sea mayor que hasta
+    if desde > hasta:
+        return []
+
+    def primo_o_no(numero):
+        divisores = []
+        for div in range(1, numero+1):
+            if numero % div == 0:
+                divisores.append(div)
+        if len(divisores) <= 2:
+            return True
+        else:
+            return False
+
+    print(primo_o_no(1))
+    primos = []
+    for num in range(desde, hasta+1):
+        if primo_o_no(num):
+            primos.append(num)
+
+    return primos
+
+print(ListaPrimos(1,10))
 
 
 def ListaRepetidos(lista):
