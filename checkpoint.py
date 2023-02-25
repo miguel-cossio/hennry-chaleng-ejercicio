@@ -45,6 +45,7 @@ def Exponente(numero, exponente):
     '''
     # Tu código aca:
     
+    
     return 'Funcion incompleta'
 
 
