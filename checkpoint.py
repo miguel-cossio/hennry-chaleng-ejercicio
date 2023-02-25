@@ -16,7 +16,7 @@ def ListaDivisibles(numero, tope):
         ListaDivisibles(7,50) debe retornar [7,14,21,28,35,42,49]
     '''
     # Tu código aca:
-    int(numero,)
+    
     if type(numero) == int and type(tope) == int:
         numeros_div = []
         for i in range(1, tope+1):
@@ -44,9 +44,13 @@ def Exponente(numero, exponente):
         Exponente(10,3) debe retornar 1000
     '''
     # Tu código aca:
+    if type(numero) == int or type(numero)== float and type(exponente) == int or type(exponente)==float:
+        resultado = numero** exponente
     
-    
-    return 'Funcion incompleta'
+        return resultado
+    else:
+
+        return print("porfavor ingrese un numero entero")
 
 
 def ListaDeListas(lista):
@@ -63,6 +67,7 @@ def ListaDeListas(lista):
         ListaDeListas([[1,2,[3]],[4]]) debe retornar [1,2,3,4]
     '''
     # Tu código aca:
+    
     return 'Funcion incompleta'
 
 
