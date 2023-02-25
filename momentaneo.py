@@ -60,3 +60,44 @@ class HenryChallenge(unittest.TestCase):
         lista_test = ch.ListaPrimos(0, '66')
         lista_esperada = None
         self.assertEqual(lista_test, lista_esperada)
+
+    def test_ListaDeListas_01(self):
+        lista_test = ch.ListaDeListas(100)
+        lista_esperada = None
+        self.assertEqual(lista_test, lista_esperada)
+
+    def test_ListaDeListas_02(self):
+        lista_test = ch.ListaDeListas([1, [2, 3], [[4, 5], 6], [[7]]])
+        lista_esperada = [1, 2, 3, 4, 5, 6, 7]
+        self.assertEqual(lista_test, lista_esperada)
+
+    def test_ListaDeListas_03(self):
+        lista_test = ch.ListaDeListas(
+            ['a', 'b', 1, 2, ['a1', 'b3'], [['a'], 2]])
+        lista_esperada = ['a', 'b', 1, 2, 'a1', 'b3', 'a', 2]
+        self.assertEqual(lista_test, lista_esperada)
+
+    def test_ListaDeListas_04(self):
+        lista_test = ch.ListaDeListas([[[1]], 2, [[[[3]]]]])
+        lista_esperada = [1, 2, 3]
+        self.assertEqual(lista_test, lista_esperada)
+
+    def test_Factorial_01(self):
+        valor_test = ch.Factorial(5)
+        valor_esperado = 120
+        self.assertEqual(valor_test, valor_esperado)
+
+    def test_Factorial_02(self):
+        valor_test = ch.Factorial(1)
+        valor_esperado = 1
+        self.assertEqual(valor_test, valor_esperado)
+
+    def test_Factorial_03(self):
+        valor_test = ch.Factorial(0)
+        valor_esperado = 1
+        self.assertEqual(valor_test, valor_esperado)
+
+    def test_Factorial_04(self):
+        valor_test = ch.Factorial(9)
+        valor_esperado = 362880
+        self.assertEqual(valor_test, valor_esperado)

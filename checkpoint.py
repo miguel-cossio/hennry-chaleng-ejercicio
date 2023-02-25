@@ -68,9 +68,16 @@ def ListaDeListas(lista):
     '''
     # Tu código aca:
 
-    return 'Funcion incompleta'
-
-
+    if type(lista) != list:
+        return None
+    result = []
+    for item in lista:
+        if isinstance(item, list):
+            result.extend(ListaDeListas(item))
+        else:
+            result.append(item)
+    return result
+    
 def Factorial(numero):
     '''
     Esta función devuelve el factorial del número pasado como parámetro.
@@ -83,7 +90,18 @@ def Factorial(numero):
         Factorial(0) debe retornar 1
     '''
     # Tu código aca:
-    return 'Funcion incompleta'
+    if numero < 0:
+        return None
+    elif numero == 0:
+        return 1
+    else:
+        resultado = 1 
+        for mult in range(1, numero + 1):
+            resultado *= mult
+        return resultado
+        
+print(Factorial(4),"hola")
+        
 
 
 def ListaPrimos(desde, hasta):
