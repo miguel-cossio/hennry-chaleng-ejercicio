@@ -1,93 +1,84 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
+# HENRY CHALLENGE - Python y Matemática
 
-<!--# ANALYTICS:-->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161500899-3">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-161500899-3');
-</script>
+### Bienvenido al Henry Challenge sobre Python y Matemática para la carrera Data Science.
 
-<!--# GOOGLE TAG MANAGER-->
-<!--# HEAD-->
-<!-- Google Tag Manager -->
-<script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5Z2JFWV');
-</script>
-<!-- End Google Tag Manager -->
-<!--# BODY-->
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z2JFWV"
-height="0" width="0" style="display:none;visibility:hidden">
-  </iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
+<p style="color:#f92850; font-size: 16px; text-align:center;">¡ Por favor lee TODO este material con atención !</p>
 
-# Prep Course 
+## INTRODUCCION
 
-### ¡Hola! Bienvenido al Prep Course para la carrera de Data Science. 
+El Henry Challenge es un desafío técnico donde evaluamos conceptos básicos sobre Python.
+En esta instancia, buscamos asegurarnos que todos nuestros aplicantes  tengan una base de conocimientos mínimos necesarios para luego seguir aprendiendo temas nuevos.
 
-En este curso introductorio podrás aprender todo el contenido que luego será evaluado en el Henry Challenge, el último paso para ingresar a la carrera de Data Science en Henry. 
+>El Challenge debe resolverse de manera individual. Si te copias o recibes ayuda de compañeros, además de estar incumpliendo con las normas de Henry (lo que te dejaría afuera de la carrera), estarás perjudicándote a ti mismo, porque el primer día de clase estarías extremadamente perdido.
 
-#### ¿Qué es el Prep Course? 
+¿Se puede volver a rendir el HC?    
+-   Si, el HC se puede rendir tantas veces como ustedes quieran! No hay límite de intentos.
+
+¿Qué hago una vez entregado el HC?
+- ¡A esperar! Los van a estar contactando en un plazo no mayor a una semana para confirmarles, tanto si quedaron, como si no lo hicieron.
+
+## PASOS PARA RESOLVER EL CHECKPOINT:
+
+### 1. FORK
+
+Primero debes forkear este repo, haciendo click en el botón `fork` de arriba a la derecha.
+
+Una vez que tengas una copia de este repo en tu cuenta de `github`, cloná el repo dentro de una nueva carpeta (asegurate de no utilizar la misma que el prep curse). Una vez clonado entrá a esa carpeta y ejecutá los siguientes comandos:
+
+    python tests.py
+
+>Si ves los tests fallando, estás listo para comenzar, si no lee bien el output para identificar el error.
 
 
-El Prep Course, o curso preparatorio, es un curso que diseñamos desde Henry con la finalidad de nivelar a todos nuestros aplicantes. La idea es que con este curso puedas dar tus primeros pasos en tecnología y así aprender esos conceptos básicos que serán necesarios para cuando estés dentro de la carrera. 
+### 2. RESOLVER EL CHALLENGE DE PYTHON
 
-#### ¿En qué consiste el Prep Course? 
+Tu tarea es completar el código en `checkpoint.py` de tal forma que pasen la mayoría de los tests, incluido el extra credit.
 
-El curso consiste en una serie de videos, material escrito y ejercicios para que puedas ir aprendiendo estos conceptos básicos de Python y Matemática. 
-Todo el material de Python, incluyendo los VIDEOS, se encuentra dentro de esta página, en las pestañas superiores puedes acceder a cada una de las clases. 
+### 3. RESOLVER EL CHALLENGE DE MATEMÁTICA
 
-Para resolver los ejercicios (Homeworks), accede a este repositorio (https://github.com/soyHenry/Python-Prep), RECUERDA que no puedes acceder a los videos desde este repositorio.
+Tu tarea será leer el enunciado en el archivo "HC_Math.md" y ejecutar el programa 'test_math.py' para cargar allí tus respuestas, las mismas serán guardadas en el archivo test_math.csv. Por favor no modifiques ninguno de los dos.
 
-Una vez que hayas terminado de estudiarlo, podrás continuar con el contenido de matemática que se encuentra en: math.prep.soyhenry.com
+### 4. ENTREGAR TU CHECKPOINT
 
-Podrás ir avanzando con el contenido a tu ritmo y de manera asincrónica (es decir, en los horarios y tiempos que tu prefieras). Cuando hayas finalizado, podrás inscribirte para realizar el Henry Challenge. 
+Correr por ultima vez los tests y verificar cuantos pasan. Ten en cuenta que si te aparece "1 failed;1 total" es porque tienes un error de sintaxis: seguramente falta o sobra un corchete, paréntesis, dos puntos, etc.
+Saca un print de pantalla de tus tests.
+Luego, debes subir un commit a tu repo. Para hacerlo, debes ejecutar el siguiente comando:
 
-#### ¿Qué es el Henry Challenge? 
+    git add .
+    git commit -m 'checkpoint commit'
+    git push origin main
 
-Es un examen donde evaluamos los conceptos que se aprenden en el Prep Course. El examen tiene la finalidad de asegurarnos que realmente se han aprendido estos conceptos, dado que tenerlos bien claro es la clave de éxito para que puedas avanzar bien dentro de la carrera. 
-El examen se realiza los días sábados cada dos semanas.
-
-#### ¿Qué puedo hacer si tengo dudas? 
-
-
-Contamos con Slack: una plataforma de comunicación donde podrás ponerte en contacto con nuestra comunidad que siempre te ayudará a resolver todas tus dudas. Encontrarás acceso a slack desde los mails que recibiste al aplicar a la carrera. Más adelante te explicaremos cómo usar la herramienta. 
-
-Entonces, ¿qué debo hacer ahora para avanzar con el proceso? 
-Debes comenzar a ver todos los videos, el material escrito y a hacer los ejercicios, siguiendo el orden postulado aquí en el curso. Una vez que hayas finalizado, pasarás al material de matemática y luego podrás realizar el Henry Challenge. 
+Una vez finalizado, chequea:
+1. Que veas los cambios reflejados en el repo de tu cuenta de github (entrando a tu repo desde el browser.)
+2.  Que no haya un require - solo debe haber codigo dentro de las funciones de cada ejercicio 
 
 
-Cualquier duda, nos puedes escribir a admisiones@soyhenry.com
-¡Muchos éxitos!
+<img src="https://a.slack-edge.com/production-standard-emoji-assets/13.0/google-medium/26a0-fe0f@2x.png" style="float:left; width:35px; padding: 10px;" /> Atención: no debes realizar un commit después de la hora de entrega porque se anulara la totalidad del examen. 
+>Revisar la hora del entrega del examen en los emails que te llegaron. 
 
+### ¿TENES ALGUN PROBLEMA / CONSULTA?
 
+1. Busca la solución en la "guía de errores comunes".
 
-## Open House
+2. Si no la encuentras, revisa el canal de #henry_challenge en Slack. Probablemente a algún compañero le paso algo similar y ya lo consulto.
 
-En este video podrás conocer más sobre Henry, la carrera de Data Science y el proceso de admisión. 
+3. Si no encuentras la respuesta, puedes publicar un mensaje en dicho canal.
 
-<div class="iframeContainer">
-  <iframe src="https://player.vimeo.com/video/682041440" allow="autoplay; fullscreen" allowfullscreen></iframe>
-</div>
+> No se puede hacer consultas sobre la resolucion de los ejercicios.
 
+### GUIA DE ERRORES COMUNES
 
-Los proximos inicios de la carrera se iran publicando en la landing de Data Science: https://www.soyhenry.com/carrera-data-science
+Para identificar el error, vas a tener que leerlo en la consola.
 
-Si tienes mas dudas sobre Henry, la carrera o el proceso de admisión puedes consultarlo en el canal #consultas_administrativas de Slack.
+* 1 failed, 1 total:
+    1. Tenes un error de sintaxis. Revisa el último ejercicio que hayas hecho, seguramente falta o sobra un corchete, paréntesis, dos puntos, etc.
 
-## Testimonio de graduados 
+* Author identity unknown.  
+    1. Intenta ejecutar los siguientes comandos para configurar tu cuenta:
+        * git config --global user.name "Tu usuario de GitHub aca"
+        * git config --global user.email "Tu email aca"
 
-<div class="iframeContainer">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/GrVqJhWYaKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+    2. Ingresa a [Github](https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) y sigue las instrucciones para configurar tu token. 
 
+* La consola se tilda en `Runs`:
+    1. Revisa tu código, tenes un bucle infinito. Tenes que checkear la condición de corte de tus bucles.
