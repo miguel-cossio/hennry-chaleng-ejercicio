@@ -35,7 +35,8 @@ def ListaDivisibles(numero, tope):
 
 def Exponente(numero, exponente):
     '''
-    Esta función devuelve el resultado de elevar el parámetro "numero" al parámetro "exponente"
+    Esta función devuelve el resultado de elevar el parámetro "numero"
+    al parámetro "exponente"
     Recibe dos argumentos:
         numero: El número base en la operación exponencial
         exponente: El número exponente en la operación exponencial
@@ -43,6 +44,7 @@ def Exponente(numero, exponente):
         Exponente(10,3) debe retornar 1000
     '''
     # Tu código aca:
+    
     return 'Funcion incompleta'
 
 
