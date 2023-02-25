@@ -1,5 +1,7 @@
-# Importante: No modificar ni el nombre ni los argumetos que reciben las funciones, sólo deben escribir
+# Importante: No modificar ni el nombre ni los argumetos que reciben las funciones, sólo deben
+# escribir
 # código dentro de las funciones ya definidas.
+
 
 def ListaDivisibles(numero, tope):
     '''
@@ -13,8 +15,23 @@ def ListaDivisibles(numero, tope):
         ListaDivisibles(10,5) debe retornar []
         ListaDivisibles(7,50) debe retornar [7,14,21,28,35,42,49]
     '''
-    #Tu código aca:
-    return 'Funcion incompleta'
+    # Tu código aca:
+    int(numero,)
+    if type(numero) == int and type(tope) == int:
+        numeros_div = []
+        for i in range(1, tope+1):
+
+            if i % numero == 0:
+
+                numeros_div.append(i)
+            else:
+                continue
+
+        return sorted(numeros_div)
+    else:
+
+        return print("porfavor ingrese un numero entero")
+
 
 def Exponente(numero, exponente):
     '''
@@ -25,8 +42,9 @@ def Exponente(numero, exponente):
     Ej:
         Exponente(10,3) debe retornar 1000
     '''
-    #Tu código aca:
+    # Tu código aca:
     return 'Funcion incompleta'
+
 
 def ListaDeListas(lista):
     '''
@@ -41,8 +59,9 @@ def ListaDeListas(lista):
         ListaDeListas(108) debe retornar el valor nulo.
         ListaDeListas([[1,2,[3]],[4]]) debe retornar [1,2,3,4]
     '''
-    #Tu código aca:
+    # Tu código aca:
     return 'Funcion incompleta'
+
 
 def Factorial(numero):
     '''
@@ -55,8 +74,9 @@ def Factorial(numero):
         Factorial(-2) debe retornar nulo
         Factorial(0) debe retornar 1
     '''
-    #Tu código aca:
+    # Tu código aca:
     return 'Funcion incompleta'
+
 
 def ListaPrimos(desde, hasta):
     '''
@@ -73,8 +93,9 @@ def ListaPrimos(desde, hasta):
         ListaPrimos(100,99) debe retornar []
         ListaPrimos(1,7) debe retonan [1,2,3,5,7]
     '''
-    #Tu código aca:
+    # Tu código aca:
     return 'Funcion incompleta'
+
 
 def ListaRepetidos(lista):
     '''
@@ -91,8 +112,9 @@ def ListaRepetidos(lista):
             debe retornar [('hola',2),('mundo',1),(13,1),(14,1)]
         ListaRepetidos([1,2,2,4]) debe retornar [(1,1),(2,2),(4,1)]
     '''
-    #Tu código aca:
+    # Tu código aca:
     return 'Funcion incompleta'
+
 
 def ClaseVehiculo(tipo, color):
     '''
@@ -115,8 +137,9 @@ def ClaseVehiculo(tipo, color):
         a.Acelerar(15) -> debe devolver 25
         a.Acelerar(-10) -> debe devolver 15
     '''
-    #Tu código aca:
+    # Tu código aca:
     return 'Funcion incompleta'
+
 
 def OrdenarDiccionario(diccionario_par, clave, descendente=True):
     '''
@@ -144,5 +167,5 @@ def OrdenarDiccionario(diccionario_par, clave, descendente=True):
                                                                 'clave2':['barco','auto','casa'],
                                                                 'clave3':[3,2,1]}
     '''
-    #Tu código aca:
-    return 'Funcion incompleta'   
+    # Tu código aca:
+    return 'Funcion incompleta'
