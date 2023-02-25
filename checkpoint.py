@@ -164,7 +164,21 @@ def ListaRepetidos(lista):
         ListaRepetidos([1,2,2,4]) debe retornar [(1,1),(2,2),(4,1)]
     '''
     # Tu código aca:
-    return 'Funcion incompleta'
+    
+    if type(lista) != list:
+        return None
+
+    
+
+    resultado = []
+    for elemento in lista:
+        if (elemento, lista.count(elemento)) not in resultado:
+            resultado.append((elemento, lista.count(elemento)))
+
+
+    return resultado
+
+
 
 
 def ClaseVehiculo(tipo, color):

@@ -101,3 +101,18 @@ class HenryChallenge(unittest.TestCase):
         valor_test = ch.Factorial(9)
         valor_esperado = 362880
         self.assertEqual(valor_test, valor_esperado)
+
+    def test_ListaRepetidos_01(self):
+        lista_test = ch.ListaRepetidos(['hola', 'mundo', 'hola'])
+        lista_esperada = [('hola', 2), ('mundo', 1)]
+        self.assertEqual(lista_test, lista_esperada)
+
+    def test_ListaRepetidos_02(self):
+        lista_test = ch.ListaRepetidos([10, 11, 11, 12, 15, 17, 20, 20])
+        lista_esperada = [(10, 1), (11, 2), (12, 1), (15, 1), (17, 1), (20, 2)]
+        self.assertEqual(lista_test, lista_esperada)
+
+    def test_ListaRepetidos_03(self):
+        lista_test = ch.ListaRepetidos((1, 2, 3, 3))
+        lista_esperada = None
+        self.assertEqual(lista_test, lista_esperada)
